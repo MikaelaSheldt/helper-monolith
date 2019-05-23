@@ -6,8 +6,8 @@ const {Block} = require('./models')
 const blocks = [
   {
     description: 'practice algorithms',
-    expectedDuration: 45,
-    priority: 'high',
+    duration: 45,
+    priority: 1,
     status: 'active',
     mutable: true,
     morning: true,
@@ -15,8 +15,8 @@ const blocks = [
   },
   {
     description: 'practice pitch',
-    expectedDuration: 30,
-    priority: 'medium',
+    duration: 30,
+    priority: 2,
     status: 'active',
     mutable: true,
     morning: true,
@@ -24,8 +24,8 @@ const blocks = [
   },
   {
     description: 'write letters',
-    expectedDuration: 45,
-    priority: 'low',
+    duration: 45,
+    priority: 3,
     status: 'active',
     mutable: true,
     recover: true,

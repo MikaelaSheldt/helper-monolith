@@ -7,12 +7,9 @@ const Block = db.define('block',
       type: Sequelize.TEXT,
       allowNull: true
     },
-    expectedDuration: Sequelize.STRING,
+    duration: Sequelize.STRING,
     priority: {
-      type: Sequelize.STRING,
-      validate: {
-        isIn: [['high', 'medium', 'low']]
-      }
+      type: Sequelize.INTEGER,
     },
     status: {
       type: Sequelize.STRING,
